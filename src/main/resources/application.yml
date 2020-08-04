@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: pinpoint-testR
+
+##########请求的项目名##########
+
+
+  ##########zipKin################
+zipkin:
+  serviceName: bbscontent
+  url: http://47.93.136.21:9411
+  connectTimeout: 6000
+  readTimeout: 6000
+  flushInterval: 1
+  compressionEnabled: true
